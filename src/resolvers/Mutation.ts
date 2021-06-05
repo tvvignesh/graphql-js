@@ -1,6 +1,6 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { APP_SECRET } = require('../utils');
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import { APP_SECRET } from '../utils.js';
 
 async function post(parent, args, context, info) {
   const { userId } = context;
@@ -83,7 +83,7 @@ async function vote(parent, args, context, info) {
   return newVote;
 }
 
-module.exports = {
+export {
   post,
   signup,
   login,

@@ -24,6 +24,6 @@ async function feed(parent, args, context, info) {
   };
 }
 
-module.exports = {
+export {
   feed
 };

@@ -10,7 +10,4 @@ function votes(parent, args, context) {
     .votes();
 }
 
-module.exports = {
-  postedBy,
-  votes
-};
+export { postedBy, votes };

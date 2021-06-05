@@ -4,6 +4,6 @@ function links(parent, args, context) {
     .links();
 }
 
-module.exports = {
+export {
   links
 };
